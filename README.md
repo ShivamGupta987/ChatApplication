@@ -2,7 +2,9 @@
 
 Welcome to ChatExpress, a cutting-edge real-time chat application designed to provide an instantaneous communication experience through a sleek web interface. Powered by Socket.IO for real-time, bidirectional, and event-based communication, and built upon a robust Node.js/Express backend, ChatExpress redefines online chatting. Our application is meticulously styled with custom HTML/CSS, ensuring a unique, intuitive, and user-friendly interface that stands out.
 
-![ChatExpress Banner](https://drive.google.com/drive/u/2/home)
+![ChatExpress Banner]
+![file](https://github.com/ShivamGupta987/ChatApplication/assets/118923085/d4da8bed-675e-4409-af5d-961d0ca8c8a4)
+
 
 ## Key Features
 
