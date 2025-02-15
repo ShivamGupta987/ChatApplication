@@ -41,9 +41,16 @@ function appendMessage(msg, type) {
     mainDiv.classList.add(className, 'message'); 
 
     let markup = `
-        <h4>${msg.user}</h4>
-        <p>${msg.message}</p>
-    `;
+    <div class="message-content">
+        <div class="message-header">
+            <h4 class="username">${msg.user}</h4>
+            <span class="timestamp">${new Date().toLocaleTimeString()}</span>
+        </div>
+        <div class="message-body">
+            <p class="message-text">${msg.message}</p>
+        </div>
+    </div>
+`;
 
     mainDiv.innerHTML = markup;
     messageArea.appendChild(mainDiv);
