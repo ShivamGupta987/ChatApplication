@@ -1,8 +1,10 @@
 const socket = io();
 
 let name;
+
 let textarea = document.querySelector('#textarea');
 let messageArea = document.querySelector('.message_area'); 
+
 do {
     name = prompt('Please enter your name:');
 } while (!name);
@@ -26,7 +28,7 @@ function sendMessage(message) {
     // Append message
     appendMessage(msg, 'outgoing');
     // after sending text area blank
-    textarea.value = ''
+    textarea.value = '' 
     scrollToBottom();
     // Send to server
     socket.emit('message', msg);
@@ -34,9 +36,9 @@ function sendMessage(message) {
 
 function appendMessage(msg, type) {
     let mainDiv = document.createElement('div');
-    let className = type; // Corrected variable name
+    let className = type; 
 
-    mainDiv.classList.add(className, 'message'); // Corrected class name
+    mainDiv.classList.add(className, 'message'); 
 
     let markup = `
         <h4>${msg.user}</h4>
